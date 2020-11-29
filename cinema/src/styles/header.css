@@ -1,0 +1,94 @@
+
+
+  
+header {
+    padding: 10px 10px;
+    width: auto;
+    height: 50px;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  header small {
+    color: #3d3dad;
+    padding-left: 67px;
+    font-size: 45px;
+  }
+  #brand {
+    text-decoration: none;
+    color: #3d3dad;
+  }
+  header span {
+    float:right;
+  }
+  
+  header span a {
+    margin-left: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #3d3dad;
+  }
+  
+  header span #main-button {
+    margin-left: 25px;
+    color: white;
+    font-size: large;
+    padding: 10px 10px;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px 30px;
+    border: none;
+    background-color: #3d3dad;
+  }
+  
+  
+  
+  header .im-code {
+    color: #3d3dad;
+    top: 0.2%;
+    position: absolute;
+    font-size: 60px;
+  }
+  
+  header ~ h2 {
+    padding-left: 10px;
+    font-size: 35px;
+    color: #3d3dad;
+  }
+
+
+
+  @media (min-width: 1200px) {
+    .hidden-lg {
+      display: none !important;
+    }
+  }
+  
+  @media (min-width: 780px) and (max-width: 1200px) {
+    .hidden-md {
+      display: none !important;
+    }
+  }
+
+@media (max-width: 780px) {
+  
+    .reduce-size{
+      font-size: 35px;
+    }
+    .hidden-sm {
+      display: none !important;
+    }
+    .menu-bar{
+      padding-top: 18px ;
+      padding-right: 15px;
+    }
+  
+  }
+
+
+  @media (max-width: 750px) {
+    .hidden-xs {
+      display: none !important;
+    }
+  }
+  
