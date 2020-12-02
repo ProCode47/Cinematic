@@ -39,7 +39,7 @@ const Header = () => {
           </Modal>
           
         </header>
-        {/* <span className="search-bar hidden-sm">
+        <span className="search-bar hidden-bar">
           {" "}
           <input
             className="search"
@@ -55,7 +55,7 @@ const Header = () => {
               <b className="im im-magnifier"></b>
             </button>{" "}
           </Link>{" "}
-        </span> */}
+        </span>
         </React.Fragment>
       );
 }

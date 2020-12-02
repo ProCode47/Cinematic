@@ -8,21 +8,22 @@ const Result = ({ search, name }) => {
         {" "}
         Search Results for{" "}
         <b>
-          <code>{name}</code>
+          <i>{name}</i>
         </b>{" "}
       </h2>
-      <div class="movie-card">
+      <div class="movie-card reduce">
         {search.map((movie, index) => (
           <div className="movie" key={index}>
             <a href={`/movie/${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
+                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt="cinematic"
+                  alt={movie.title}
                 />{" "}
               </div>
-              <h4>{movie.title}</h4>{" "}
+              <h4 className="reduce-font">{movie.title}</h4>{" "}
             </a>
           </div>
         ))}
