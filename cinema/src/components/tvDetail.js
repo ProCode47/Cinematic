@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import ReactPlayer from 'react-player';
 import { API_KEY, API_URL, IMG_URL } from "../config";
 import "../styles/details.css"
+import { useLocation } from "react-router-dom";
+import queryString from "query-string";
 import axios from "axios";
 
 
@@ -11,7 +13,9 @@ const TvDetail = (props) => {
   const [Crew, setCrew] = useState([]);
   const [ShowCrew, setShowCrew] = useState(true);
   const [Movie, setMovie] = useState([]);
-  const tvID = props.match.params.tvID;
+  const location = useLocation();
+  const { id } = queryString.parse(location.search);
+  const tvID = id;
   const [Url, setUrl] = useState();
   const handleCrew = () => {
     setShowCrew(!ShowCrew)
@@ -89,7 +93,7 @@ const TvDetail = (props) => {
           </div>}
         </div> 
 
-       {Url  &&
+        {Url  &&
        <div> <h2 className="text">Watch the Trailer Now!</h2> 
         
         <div className="trailer">

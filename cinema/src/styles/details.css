@@ -15,8 +15,19 @@
     width: 95%;
     height: max-content;
     color: black;
+    font-size: medium;
 
 }
+
+.biox{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: max-content;
+
+}
+
 .detail > .bio{
     padding: 10px 10px;
     font-size: xx-large;
@@ -33,6 +44,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    padding: 15px 15px;
 }
 .text{
     text-align: center;

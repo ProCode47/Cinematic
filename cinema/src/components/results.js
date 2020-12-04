@@ -14,7 +14,7 @@ const Result = ({ search, name }) => {
       <div class="movie-card reduce">
         {search.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails/${movie.id}`}>
               {" "}
               <div className="dp">
                 <img

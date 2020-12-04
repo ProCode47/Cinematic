@@ -40,7 +40,11 @@ h2 > a {
   }
 
 }
-
+.infinite-load{
+  text-align:center;
+  color:#3737ac;
+  font-weight: lighter;
+}
 .movie {
   width: 90%;
   height: 90%;
@@ -65,12 +69,15 @@ h2 > a {
 
 .dp > img{
   border-radius: 10px 10px;
+  font-size: medium;
 }
 
 
 .movie img {
   width: auto;
   height: 100%;
+  padding:0px 0px;
+  margin:0px 0px;
 }
 
 .explore-header {

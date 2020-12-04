@@ -69,7 +69,7 @@ const App = () => {
           </small>{" "}
           <span>
             {" "}
-            <a style={{color:IconDisplay}}  href="#" onClick={handleSearchField} className="im im-magnifier hide-search show-search"></a>
+            <b style={{color:IconDisplay}}  onClick={handleSearchField} className="im im-magnifier hide-search show-search"></b>
             <Link to="/" className="hidden-sm ">
               <a>Movies</a>
             </Link>
@@ -82,7 +82,7 @@ const App = () => {
               <button id="main-button" className="hidden-sm">Explore Now</button>{" "}
 
             </Link>{" "}
-            <a onClick={ handleModal}className="im im-menu hidden-lg hidden-md menu-bar"></a>
+            <b onClick={ handleModal}className="im im-menu hidden-lg hidden-md menu-bar"></b>
           </span>{" "}
           <Modal show={ShowModal} handleClose={handleModal}>
           </Modal>
@@ -130,8 +130,8 @@ const App = () => {
         <Route path="/" exact component={Movies}></Route>
         <Route path="/tv" exact component={Shows}></Route>
         <Route path="/genre" exact component={Explore}></Route>
-        <Route path="/movie/:movieID" component={MovieDetail}></Route>
-        <Route path="/tv/:tvID" component={TvDetail}></Route>
+        <Route path="/moviedetails" component={MovieDetail}></Route>
+        <Route path="/tvdetails" component={TvDetail}></Route>
         <Route path="/discover/:genre" component={LoadMore}></Route>
 
       </React.Fragment>

@@ -22,12 +22,12 @@ const Latest = () => {
     <React.Fragment>
       <h2>
         {" "}
-        <Link to="/latest"> Latest Movies </Link>{" "}
+        <Link to="/latest"> Popular Movies </Link>{" "}
       </h2>
       <div class="movie-card reduce">
         {movies.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img

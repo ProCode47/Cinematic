@@ -53,10 +53,12 @@
   left: 1%;
 }
 .search-toggle {
+  padding-left: 15px;
   color: black;
   height: auto;
   width: 65vw;
-  border: none;
+  border-style: solid;
+  border-width:0.5px;
   font-size: x-large;
   border-radius: 10px 10px;
 
@@ -116,7 +118,9 @@ header {
   }
   
   
-  
+  .im-menu{
+    color:#3d3dad;
+  }
   header .im-code {
     color: #3d3dad;
     top: 0.2%;

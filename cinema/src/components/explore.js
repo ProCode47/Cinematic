@@ -126,13 +126,12 @@ const Explore = () => {
         <Link to="/discover/28">Action</Link>{" "}
       </h2>
       <div class="movie-card reduce">
-      {action.map((movie, index) => (
+        {action.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
@@ -148,13 +147,12 @@ const Explore = () => {
         <Link to="/discover/10749">Romance</Link>
       </h2>
       <div class="movie-card reduce">
-      {romance.map((movie, index) => (
+        {romance.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
@@ -169,13 +167,12 @@ const Explore = () => {
         <Link to="/discover/16">Animation</Link>
       </h2>
       <div class="movie-card reduce">
-      {animation.map((movie, index) => (
+        {animation.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
@@ -190,13 +187,12 @@ const Explore = () => {
         <Link to="/discover/35">Comedy</Link>
       </h2>
       <div class="movie-card reduce">
-      {comedy.map((movie, index) => (
+        {comedy.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
@@ -211,13 +207,12 @@ const Explore = () => {
         <Link to="/discover/80">Crime</Link>
       </h2>
       <div class="movie-card reduce">
-      {crime.map((movie, index) => (
+        {crime.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
@@ -233,13 +228,12 @@ const Explore = () => {
         <Link to="/discover/27">Horror</Link>
       </h2>
       <div class="movie-card reduce">
-      {horror.map((movie, index) => (
+        {horror.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
@@ -254,13 +248,12 @@ const Explore = () => {
         <Link to="/discover/9648">Mystery</Link>
       </h2>
       <div class="movie-card reduce">
-      {mystery.map((movie, index) => (
+        {mystery.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
@@ -275,13 +268,12 @@ const Explore = () => {
         <Link to="/discover/878">Science Fiction</Link>
       </h2>
       <div class="movie-card reduce">
-      {sciFi.map((movie, index) => (
+        {sciFi.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
+            <a href={`/moviedetails?id=${movie.id}`}>
               {" "}
               <div className="dp">
                 <img
-                
                   src={`${IMG_URL}/w500${movie.poster_path}`}
                   alt={movie.title}
                 />{" "}
