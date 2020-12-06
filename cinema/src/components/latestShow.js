@@ -27,7 +27,7 @@ const LatestShow = () => {
       <div class="movie-card reduce">
       {movies.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/tvdetails?id=${movie.id}`}>
+            <a href={`/tv/${movie.id}`}>
               {" "}
               <div className="dp">
                 <img

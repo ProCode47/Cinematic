@@ -51,11 +51,11 @@ const Trending = () => {
          dataLength={movies.length} 
         next={handleClick}
         hasMore={true}
-          className="movie-card"
+          className="movie-card reduce"
          >
         {movies.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails/${movie.id}`}>
+            <a href={`/movie/${movie.id}`}>
               {" "}
               <div className="dp">
                 <img

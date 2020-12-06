@@ -46,7 +46,7 @@ const LoadMore = (props) => {
          >
         {Movie.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails/${movie.id}`}>
+            <a href={`/movie/${movie.id}`}>
               {" "}
               <div className="dp">
                 <img

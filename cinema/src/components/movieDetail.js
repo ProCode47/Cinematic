@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { API_KEY, API_URL, IMG_URL } from "../config";
 import "../styles/details.css"
-import queryString from "query-string";
 import ReactPlayer from 'react-player';
 import axios from "axios";
 
-const MovieDetail = () => {
+const MovieDetail = (props) => {
   const [Movie, setMovie] = useState([]);
   const [Crew, setCrew] = useState([]);
   const [ShowCrew, setShowCrew] = useState(true);
   const [Url, setUrl] = useState();
-  const location = useLocation();
-  const { id } = queryString.parse(location.search);
-  const movieID = id;
+  const movieID = props.match.params.movieID
   
 
   const handleCrew = () => {

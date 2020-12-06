@@ -130,8 +130,8 @@ const App = () => {
         <Route path="/" exact component={Movies}></Route>
         <Route path="/tv" exact component={Shows}></Route>
         <Route path="/genre" exact component={Explore}></Route>
-        <Route path="/moviedetails" component={MovieDetail}></Route>
-        <Route path="/tvdetails" component={TvDetail}></Route>
+        <Route path="/movie/:movieID" component={MovieDetail}></Route>
+        <Route path="/tv/:tvID" component={TvDetail}></Route>
         <Route path="/discover/:genre" component={LoadMore}></Route>
 
       </React.Fragment>

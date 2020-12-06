@@ -128,7 +128,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {action.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img
@@ -149,7 +150,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {romance.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img
@@ -169,7 +171,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {animation.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img
@@ -189,7 +192,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {comedy.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img
@@ -209,7 +213,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {crime.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img
@@ -230,7 +235,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {horror.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img
@@ -250,7 +256,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {mystery.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img
@@ -270,7 +277,8 @@ const Explore = () => {
       <div class="movie-card reduce">
         {sciFi.map((movie, index) => (
           <div className="movie" key={index}>
-            <a href={`/moviedetails?id=${movie.id}`}>
+                        <a href={`/movie/${movie.id}`}>
+
               {" "}
               <div className="dp">
                 <img

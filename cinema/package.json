@@ -7,9 +7,9 @@
     "query-string": "^6.13.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-scripts": "1.1.4",
     "react-infinite-scroll-component": "^5.1.0",
-    "react-player": "^2.7.0",
-    "react-scripts": "1.1.4"
+    "react-player": "^2.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
