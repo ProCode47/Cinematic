@@ -7,8 +7,8 @@
 ![](https://img.shields.io/badge/Framework-React-informational?style=flat&logo=react&logoColor=white&color=2bbc8a)
 
 # Search and Explore Movies and TV Shows easily 🚀
-<li> Features Including </li>
-## Popular Movies
-## Latest Movies
-## Interesting TV Shows
-## Different Genres
+## Features Including 
+<li> Popular Movies </li>
+<li> Latest Movies </li>
+<li> Interesting TV Shows </li>
+<li> Different Genres </li>
