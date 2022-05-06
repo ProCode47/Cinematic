@@ -124,21 +124,25 @@ const Explore = () => {
       <h2>
         {" "}
         <Link to="/discover/28">Action</Link>{" "}
-      </h2>
-      <div class="movie-card reduce">
-        {action.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {action.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>
@@ -146,84 +150,100 @@ const Explore = () => {
       <h2>
         {" "}
         <Link to="/discover/10749">Romance</Link>
-      </h2>
-      <div class="movie-card reduce">
-        {romance.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {romance.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>
       <h2>
         {" "}
         <Link to="/discover/16">Animation</Link>
-      </h2>
-      <div class="movie-card reduce">
-        {animation.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {animation.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>
       <h2>
         {" "}
         <Link to="/discover/35">Comedy</Link>
-      </h2>
-      <div class="movie-card reduce">
-        {comedy.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {comedy.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>
       <h2>
         {" "}
         <Link to="/discover/80">Crime</Link>
-      </h2>
-      <div class="movie-card reduce">
-        {crime.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {crime.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>
@@ -231,63 +251,75 @@ const Explore = () => {
       <h2>
         {" "}
         <Link to="/discover/27">Horror</Link>
-      </h2>
-      <div class="movie-card reduce">
-        {horror.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {horror.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>
       <h2>
         {" "}
         <Link to="/discover/9648">Mystery</Link>
-      </h2>
-      <div class="movie-card reduce">
-        {mystery.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {mystery.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>
       <h2>
         {" "}
         <Link to="/discover/878">Science Fiction</Link>
-      </h2>
-      <div class="movie-card reduce">
-        {sciFi.map((movie, index) => (
-          <div className="movie" key={index}>
-                        <a href={`/movie/${movie.id}`}>
+        <i class="fa fa-arrow-right-long"></i>
 
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+      </h2>
+      <div class="movie-cards">
+      {sciFi.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </div>

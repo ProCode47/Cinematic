@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import InfiniteScroll from "react-infinite-scroll-component"
+import InfiniteScroll from "react-infinite-scroll-component";
 import { API_KEY, API_URL, IMG_URL } from "../config";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -12,18 +12,19 @@ const TrendingShow = () => {
       .get(path)
       .then((res) => {
         const movieData = res.data.results;
-        setMovies([...movies,...movieData]);
-          setPage(res.data.page)
-         
+        setMovies([...movies, ...movieData]);
+        setPage(res.data.page);
       })
       .catch((err) => {
         console.log("API couldnt be reached");
       });
-    };
-     const handleClick = () => {
-       const endpoint = `${API_URL}/trending/tv/week?api_key=${API_KEY}&language=en-US&page=${Page + 1}`;
-        fetchMovies(endpoint);
-  }
+  };
+  const handleClick = () => {
+    const endpoint = `${API_URL}/trending/tv/week?api_key=${API_KEY}&language=en-US&page=${
+      Page + 1
+    }`;
+    fetchMovies(endpoint);
+  };
   useEffect(() => {
     axios
       .get(
@@ -32,7 +33,7 @@ const TrendingShow = () => {
       .then((res) => {
         const movieData = res.data.results.splice(0, 12);
         setMovies(movieData);
-        setPage(res.data.page)
+        setPage(res.data.page);
       })
       .catch((err) => {
         console.log("API couldn't be reached");
@@ -45,23 +46,26 @@ const TrendingShow = () => {
         <Link to="/trending"> Trending </Link>{" "}
       </h2>
       <InfiniteScroll
-         dataLength={movies.length} 
+        dataLength={movies.length}
         next={handleClick}
         hasMore={true}
-          className="movie-card reduce"
-         >
-        {movies.map((movie, index) => (
-          <div className="movie" key={index}>
-            <a href={`/tv/${movie.id}`}>
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+        className="movie-cards"
+      >
+         {movies.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.name}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/tv/${movie.id}`}>
+                <h3>{movie.name}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </InfiniteScroll>

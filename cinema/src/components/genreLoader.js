@@ -42,20 +42,23 @@ const LoadMore = (props) => {
          dataLength={Movie.length} 
         next={handleClick}
         hasMore={true}
-          className="movie-card reduce"
+          className="movie-cards"
          >
-        {Movie.map((movie, index) => (
-          <div className="movie" key={index}>
-            <a href={`/movie/${movie.id}`}>
-              {" "}
-              <div className="dp">
-                <img
-                  src={`${IMG_URL}/w500${movie.poster_path}`}
-                  alt={movie.title}
-                />{" "}
-              </div>
-              <h4 className="reduce-font">{movie.title}</h4>{" "}
+          {Movie.map((movie, index) => (
+          <div className="movie card-sm" key={index}>
+            <div className="movie-img img-sm">
+              <img
+                src={`${IMG_URL}/w500${movie.poster_path}`}
+                alt={movie.title}
+              />{" "}
+            </div>
+            <div className="movie-info">
+              <a href={`/movie/${movie.id}`}>
+                <h3>{movie.title}</h3>{" "}
             </a>
+            <hr/>
+            <small><i class="fas fa-star"></i> {movie.vote_average} </small>
+            </div>
           </div>
         ))}
       </InfiniteScroll>

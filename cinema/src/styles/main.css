@@ -1,83 +1,71 @@
-body {
-  margin: 0px;
-  font-family: "Montserrat", sans-serif;
-}
-
-h2 > a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.movie-card {
-  display: grid;
-  padding: 10px;
-  grid-template-columns: repeat(4,1fr);
-  column-gap: 5px;
-}
-
-
 @media (max-width: 780px) {
- 
-  .reduce{        
-    grid-template-columns: repeat(3,1fr)!important;
+  /* for mobile */
+  .card-sm {
+    width: 30% !important;
   }
-  .reduce-font{
-    font-size: 15px;
+  .img-sm{
+    height: 40vw !important;
   }
-  .movie {
-    margin-top:-15px;
-    width: 90% !important;
-    height: 94% !important;
-    padding: 5px 5px !important;
-    text-align: center;
-    -webkit-box-shadow: 0 0 10px 5px  rgba(0, 0, 0, 0.15) !important;
-    box-shadow: 0 0 10px 5px  rgba(0, 0, 0, 0.15) !important;
-    border-radius: 10px 10px;
-  }
-  .dp {
-    height: 42vw !important;
-    width: 100%;
-  }
+}
 
+
+.movie-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.infinite-load{
-  text-align:center;
-  color:#3737ac;
-  font-weight: lighter;
-}
+
 .movie {
-  width: 90%;
-  height: 90%;
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 10px 10px;
-  -webkit-box-shadow: 0 0 10px 5px  rgba(0, 0, 0, 0.15) !important;
-  box-shadow: 0 0 10px 5px  rgba(0, 0, 0, 0.15) !important;
-  margin-bottom: 15px;
-  border-radius: 10px 10px;
+  width: 22%;
+  height: fit-content;
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 3rem;
+  border-radius: 5px;
 }
-.movie > a {
-  font-weight: lighter;
-  text-decoration: none;
-  color: #3737ac;
-  font-size: x-large;
-}
-.dp {
-  height: 31vw;
+.movie-img {
+  display: flex;
+  height: 30vw;
   width: 100%;
 }
-
-.dp > img{
-  border-radius: 10px 10px;
-  font-size: medium;
+.movie-img > img {
+  width: 100%;
+  height: auto;
 }
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 15px;
+  padding-bottom: 15px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
 
+}
+.movie-info h3{
+  color: #3d3dad;
+  font-weight: lighter;
+  font-size:1.8rem;
+  margin-bottom: 10px;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.movie-info hr{
+  width: 100%;
+}
+.movie-info small{
+  margin: 0px;
+  color: black;
+  font-weight: lighter;
+  font-size: 1.4rem;
+  margin-top: 10px;
 
-.movie img {
-  width: auto;
-  height: 100%;
-  padding:0px 0px;
-  margin:0px 0px;
+}
+.fa-star{
+  color: #ffc107;
 }
 
 .explore-header {
@@ -91,8 +79,8 @@ h2 > a {
   color: gold;
 }
 
-.load{
-  position:relative;
+.load {
+  position: relative;
   left: 45%;
   width: 120px;
   height: 50px;
@@ -104,57 +92,48 @@ h2 > a {
 }
 .modal {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   z-index: 1;
-  width:100%;
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
 
 .modal-main {
-  padding: 30px 30px;
-  position:fixed;
   background: #3b3ba7e8;
-  width: 60%;
-  height: 25vh;
-  top:46%;
-  left:50%;
-  transform: translate(-50%,-50%);
+  padding: 40px;
   border-radius: 30px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-.modal-main  a{
- text-decoration: none;
- margin-bottom: 15px;
- font-size: xx-large;
- color: white;
- font-weight: bold;
- text-align: center;
+.modal-main a {
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
-.display-block {
-  display: block;
+.display-flex {
+  display: flex;
 }
 
 .display-none {
   display: none;
 }
-/* footer {
-  margin-top: 50px;
-  background-color: #3d3dad;
-  padding-bottom: 15px;
-  padding-top: 15px;
+
+.infinite-load {
   text-align: center;
-  font-size: xx-large;
-  color: white;
+  color: #3737ac;
+  font-weight: lighter;
 }
-
-footer .im-heart {
-  color: red;
-} */
-/*# sourceMappingURL=main.css.map */
-
+.fa-arrow-right-long{
+  margin-left: 15px;
+}

@@ -5,6 +5,7 @@ import { API_KEY, API_URL } from "./config";
 import axios from "axios";
 import "./styles/header.css"
 import "./styles/main.css";
+import "./styles/presets.css";
 import "./icons/css/iconmonstr-iconic-font.css";
 import { Link } from "react-router-dom";
 import Modal from './components/modal'
@@ -64,7 +65,7 @@ const App = () => {
           <small>
             <Link to="/" id="brand" className="reduce-size">
               {" "}
-              Cinematic{" "}
+              Cinematic.{" "}
             </Link>
           </small>{" "}
           <span>
@@ -113,7 +114,7 @@ const App = () => {
           <input
             className="search"
             type="text"
-            placeholder="Search"
+            placeholder="search for movies"
             value={searchItem}
             onChange={handleChange}
           />

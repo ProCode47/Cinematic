@@ -73,20 +73,22 @@ const TvDetail = (props) => {
           <button onClick={handleCrew}> Toggle Cast </button>
 
           
-          {ShowCrew && <div class="movie-card reduce">
-            {Crew.map((crew, index) => (
-              <div className="movie" key={index}>
-                {" "}
-                <div className="dp">
-                  <img
-                    src={`${IMG_URL}/w500${crew.profile_path}`}
-                    alt={crew.name}
-                  />{" "}
-                </div>
-                <h4 className="reduce-font">{crew.name}</h4>{" "}
-              </div>
-            ))}
-          </div>}
+          {ShowCrew && 
+           <div class="movie-cards">
+           {Crew.map((crew, index) => (
+               <div className="movie card-sm" key={index}>
+                 <div className="movie-img img-sm">
+                   <img
+                     src={`${IMG_URL}/w500${crew.profile_path}`}
+                     alt={crew.name}
+                   />{" "}
+                 </div>
+                 <div className="movie-info">
+                     <h3>{crew.name}</h3>{" "}
+                 </div>
+               </div>
+             ))}
+           </div>}
         </div> 
 
         {Url  &&

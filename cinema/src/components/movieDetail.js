@@ -53,11 +53,12 @@ const MovieDetail = (props) => {
 
   return (
     <React.Fragment>
-      <br></br>
       <div className="detail">
         <img src={`${IMG_URL}/w1280${Movie.backdrop_path}`} alt={Movie.title}/>
         
-        <div className="bio"><h1><i className="biox">{Movie.title}</i></h1>
+        <div className="bio">
+          <h1>{Movie.title}</h1>
+          <hr/>
           <h2 className="about">Overview</h2>
           <p>{Movie.overview}</p>
           <h2 className="about">Runtime</h2>
@@ -68,20 +69,22 @@ const MovieDetail = (props) => {
           <p><span className="im im-star"></span> {Movie.vote_average} stars </p>
           <button onClick={handleCrew}> Toogle Cast </button>
 
-          {ShowCrew && <div class="movie-card reduce">
-            {Crew.map((crew, index) => (
-              <div className="movie " key={index}>
-                {" "}
-                <div className="dp">
-                  <img
-                    src={`${IMG_URL}/w500${crew.profile_path}`}
-                    alt={crew.name}
-                  />{" "}
-                </div>
-                <h4 className="reduce-font">{crew.name}</h4>{" "}
-              </div>
-            ))}
-          </div>}
+          {ShowCrew && 
+           <div class="movie-cards">
+           {Crew.map((crew, index) => (
+               <div className="movie card-sm" key={index}>
+                 <div className="movie-img img-sm">
+                   <img
+                     src={`${IMG_URL}/w500${crew.profile_path}`}
+                     alt={crew.name}
+                   />{" "}
+                 </div>
+                 <div className="movie-info">
+                     <h3>{crew.name}</h3>{" "}
+                 </div>
+               </div>
+             ))}
+           </div>}
           
         </div> 
         
