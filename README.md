@@ -1,6 +1,6 @@
 # Cinematicc
 ![Screenshot](./Screenshot1.png)
-<br>
+<br> 
 ![Screenshot](./Screenshot2.png)
 <br>
 ![Screenshot](./Screenshot3.png)  
